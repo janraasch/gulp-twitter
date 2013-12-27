@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+before_script:
+- npm config set coverage true
+after_success:
+- npm run-script coveralls
+after_script:
+- npm run-script twitter > /dev/null 2>&1
+env:
+  global:
+  - secure: VQ8njLj/VOBnuQLgSz2/HB/rPyUXTVejKAfZGE8AV6Kxso5oGTUgPfxVsV3ijSpkraOfiMzmdaa1BIREcKDxBygMIEdYueHYDRO/e7FdZ1ywcC6r7ivsxx59Z1xyNqONL87vQxxYiURow0LUjAWTl/Cx6fJcE++wJB7J7YsNjOU=
+  - secure: YrtHH7Mg/WivPgNglFaC+C5MHjepv/PKoZCBD+e0IolyvxVR5AJvUM9R1QYJg0RaAh5iZLyuBIPyLg2Ng6hdmiaXzKv/tqzRY1hqgCDx1wcJCT+e49gukI6Eptijlxam2ON6W9XeLIJ/adylRwRh4fH2bwzbIe+s1ZmMx5FWQbY=
+  - secure: J4WrWSwZF1VvkSa7TqYmF24+Wa93iV64UkyLEePdVTFotpriNlxCctB+hTz26GIZ82anSAfMqljrBuCMtwzikXJwDiuua13QSYYvII7DQnyjFmi8Re6qL3mr21Vq9Ri1yda+FDnyyrhvFR4gKJ2+NjKkmImPljOiwhpXStRFkbk=
+  - secure: oOsyD4xy1HYZoIxHw/IOUDFeIz/zblpKq579QLWyeJjqja2fCIYZqCyWJ1zLh77nvHgD730E49JLpTFMGeMeZFuD/JKXKALDs4SJ3HnCUCz3j2Pv+/aHspgRYcoTZN8WhzRaPxM05QZUjIb//MYXXPgjUuTCYqCn9dJmyVpShSw=

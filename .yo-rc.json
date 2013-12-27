@@ -1,0 +1,10 @@
+{
+  "generator-gulpplugin-coffee": {
+    "githubUser": "janraasch",
+    "pluginName": "twitter",
+    "appname": "gulp-twitter",
+    "realname": "Jan Raasch",
+    "email": "jan@janraasch.com",
+    "homepage": "http://janraasch.com"
+  }
+}

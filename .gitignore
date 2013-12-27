@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+temp/
+coverage/
+*.log
+index.js
+not-so-secret-test.json
