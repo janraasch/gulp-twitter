@@ -1,3 +1,4 @@
+'use strict'
 {inspect} = require 'util'
 through = require 'through2'
 Twitter = require 'node-twitter-api'
