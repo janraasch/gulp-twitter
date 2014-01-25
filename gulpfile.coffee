@@ -52,11 +52,7 @@ gulp.task 'twitter', ->
         .pipe(twitter oauth, "(##{job}) *gulp*... *gulp*... *gulp*...")
 
 # start workflow
-gulp.task 'default', ->
-    gulp.run 'coffee'
+gulp.task 'default', ['coffee'], ->
+    gulp.watch ['./{,test/,test/fixtures/}*.coffee'], ['test']
 
-    gulp.watch ['./{,test/,test/fixtures/}*.coffee'], (e) ->
-        log "File #{e.type} #{colors.magenta e.path}"
-        gulp.run 'test'
-
-# Generated on 2014-01-19 using generator-gulpplugin-coffee 0.0.2
+# Generated on 2014-01-25 using generator-gulpplugin-coffee 0.0.3
