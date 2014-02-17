@@ -9,14 +9,14 @@ clean = require 'gulp-clean'
 
 # compile `index.coffee`
 gulp.task 'coffee', ->
-    gulp.src('index.coffee')
-        .pipe(coffee bare: true)
-        .pipe(gulp.dest './')
+    gulp.src 'index.coffee'
+        .pipe coffee bare: true
+        .pipe gulp.dest './'
 
 # remove `index.js` and `coverage` dir
 gulp.task 'clean', ->
-    gulp.src(['index.js', 'coverage'], read: false)
-        .pipe(clean())
+    gulp.src ['index.js', 'coverage'], read: false
+        .pipe clean()
 
 # run tests
 gulp.task 'test', ['coffee'], ->
@@ -44,12 +44,12 @@ gulp.task 'twitter', ->
     else
         oauth = JSON.parse fs.readFileSync './not-so-secret-test.json'
 
-    gulp.src('./{,test/}*.coffee')
-        .pipe(coffeelint())
-        .pipe(twitter oauth, message)
+    gulp.src './{,test/}*.coffee'
+        .pipe coffeelint()
+        .pipe twitter oauth, message
 
-    gulp.src('package.json')
-        .pipe(twitter oauth, "(##{job}) *gulp*... *gulp*... *gulp*...")
+    gulp.src 'package.json'
+        .pipe twitter oauth, "(##{job}) *gulp*... *gulp*... *gulp*..."
 
 # start workflow
 gulp.task 'default', ['coffee'], ->
