@@ -26,14 +26,37 @@ var oauth = {
 };
 
 gulp.task('tweetie', function () {
-    gulp.src('package.json')
-        .pipe(twitter(oauth, 'Watch me while I tweet this.'))
+    return gulp.src('package.json')
+           .pipe(twitter(oauth, 'Watch me while I tweet this.'));
 });
-
-
 ```
 
-## Options `twitter(oauth, message)`
+or use it as a reporter for a `lint` or `test` plugin like so
+
+```js
+var jshint = require('gulp-jshint');
+
+gulp.task('scripts', function () {
+    var message = function (file) {
+        var ret = file.relative;
+        if (file.jshint.success) {
+            ret = ret  + ' looks good.';
+        } else {
+            ret = ret + ' seems off.';
+        }
+        return ret;
+    };
+    
+    return gulp.src('*.js')
+               .pipe(jshint())
+               .pipe(twitter(oauth, message);
+            
+});
+```
+
+## API 
+
+### `twitter(oauth, message)`
 
 ### oauth
 Type: `Object`
