@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Make your build system tweet",
   "keywords": [
-    "gulpplugin",
+    "gulpfriendly",
     "tweet",
     "twitter",
     "chatty"
