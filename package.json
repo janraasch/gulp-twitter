@@ -24,22 +24,22 @@
     "twitter": "gulp twitter --require coffee-script/register"
   },
   "dependencies": {
-    "gulp-util": "^2.2.5",
-    "through2": "^0.4.0",
-    "node-twitter-api": "^1.1.2"
+    "gulp-util": "^3.0.0",
+    "node-twitter-api": "^1.1.2",
+    "through2": "^0.6.1"
   },
   "devDependencies": {
     "coffee-script": "^1.6.3",
     "coffeelint": "^1.0.2",
-    "mocha": "^1.17.0",
-    "istanbul": "^0.2.3",
-    "should": "^3.1.0",
+    "coffeelint-use-strict": "0.0.1",
     "coveralls": "^2.6.1",
+    "del": "^0.1.2",
     "gulp": "^3.5.0",
-    "gulp-coffee": "^1.3.0",
-    "gulp-clean": "^0.2.2",
-    "gulp-coffeelint": "^0.2.0",
-    "coffeelint-use-strict": "0.0.1"
+    "gulp-coffee": "^2.1.2",
+    "gulp-coffeelint": "^0.3.4",
+    "istanbul": "^0.3.0",
+    "mocha": "^1.17.0",
+    "should": "^4.0.4"
   },
   "engines": {
     "node": ">=0.10.0",

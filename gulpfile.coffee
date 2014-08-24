@@ -5,7 +5,7 @@ gulp = require 'gulp'
 {log,colors} = require 'gulp-util'
 coffee = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
-clean = require 'gulp-clean'
+del = require 'del'
 
 # compile `index.coffee`
 gulp.task 'coffee', ->
@@ -14,9 +14,8 @@ gulp.task 'coffee', ->
         .pipe gulp.dest './'
 
 # remove `index.js` and `coverage` dir
-gulp.task 'clean', ->
-    gulp.src ['index.js', 'coverage'], read: false
-        .pipe clean()
+gulp.task 'clean', (cb) ->
+    del ['index.js', 'coverage'], cb
 
 # run tests
 gulp.task 'test', ['coffee'], ->
