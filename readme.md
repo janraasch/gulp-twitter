@@ -89,16 +89,16 @@ If you pass a `Function` this will be passed a `gulp-util.File Object` (see http
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](http://janraasch.com)
 
 [npm-url]: https://npmjs.org/package/gulp-twitter
-[npm-image]: https://badge.fury.io/js/gulp-twitter.png
+[npm-image]: https://badge.fury.io/js/gulp-twitter.svg
 
 [travis-url]: http://travis-ci.org/janraasch/gulp-twitter
-[travis-image]: https://secure.travis-ci.org/janraasch/gulp-twitter.png?branch=master
+[travis-image]: https://secure.travis-ci.org/janraasch/gulp-twitter.svg?branch=master
 
 [coveralls-url]: https://coveralls.io/r/janraasch/gulp-twitter
-[coveralls-image]: https://coveralls.io/repos/janraasch/gulp-twitter/badge.png
+[coveralls-image]: https://img.shields.io/coveralls/janraasch/gulp-twitter.svg
 
 [depstat-url]: https://david-dm.org/janraasch/gulp-twitter
-[depstat-image]: https://david-dm.org/janraasch/gulp-twitter.png
+[depstat-image]: https://david-dm.org/janraasch/gulp-twitter.svg
 
 [devdepstat-url]: https://david-dm.org/janraasch/gulp-twitter#info=devDependencies
-[devdepstat-image]: https://david-dm.org/janraasch/gulp-twitter/dev-status.png
+[devdepstat-image]: https://david-dm.org/janraasch/gulp-twitter/dev-status.svg
