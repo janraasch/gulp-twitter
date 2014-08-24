@@ -26,5 +26,4 @@ deploy:
     node: '0.10'
     # work-around for https://github.com/travis-ci/travis-ci/issues/1675
     # branch: master
-    condition: $TRAVIS_BRANCH = master
     all_branches: true
