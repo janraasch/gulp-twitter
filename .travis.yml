@@ -24,6 +24,4 @@ deploy:
     tags: true
     repo: janraasch/gulp-twitter
     node: '0.10'
-    # work-around for https://github.com/travis-ci/travis-ci/issues/1675
-    # branch: master
-    all_branches: true
+    branch: master
